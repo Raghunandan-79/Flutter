@@ -1,0 +1,69 @@
+{   
+    "icecreams": [
+        {
+            "flavor": "Pistachio",
+            "description": "Delicate pistachio-flavored ice cream with crunchy nut toppings.",
+            "toppings": ["Crushed Pistachios", "Honey Drizzle", "Whipped Cream"],
+            "price": 6.29,
+            "image": "https://plus.unsplash.com/premium_photo-1663853490433-5ed3ff06f9ea?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGlzdGFjaGlvJTIwaWNlY3JlYW18ZW58MHx8MHx8fDA%3D",
+            "ingredients": [
+            { "name": "Pistachio Nuts", "quantity": "1/2 cup" },
+            { "name": "Honey", "quantity": "2 tbsp" },
+            { "name": "Heavy Cream", "quantity": "1 1/2 cups" },
+            { "name": "Whole Milk", "quantity": "2 cups" }
+            ]
+        },
+        {
+            "flavor": "Chocolate Fudge",
+            "description": "Rich and creamy chocolate ice cream with smooth fudge swirls.",
+            "toppings": ["Chocolate Chips", "Fudge Sauce", "Brownie Bits"],
+            "price": 7.49,
+            "image": "https://images.unsplash.com/photo-1635491231222-8e524584da52?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hvY29sYXRlJTIwZnVkZ2UlMjBpY2UlMjBjcmVhbXxlbnwwfHwwfHx8MA%3D%3D",
+            "ingredients": [
+            { "name": "Cocoa Powder", "quantity": "1/3 cup" },
+            { "name": "Sugar", "quantity": "3/4 cup" },
+            { "name": "Heavy Cream", "quantity": "1 1/2 cups" },
+            { "name": "Whole Milk", "quantity": "2 cups" }
+            ]
+        },
+        {
+            "flavor": "Strawberry Delight",
+            "description": "Fresh strawberry ice cream made with real fruit chunks.",
+            "toppings": ["Strawberry Syrup", "Whipped Cream", "Sprinkles"],
+            "price": 6.99,
+            "image": "https://plus.unsplash.com/premium_photo-1713987666164-20216a0c87e1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RyYXdiZXJyeSUyMGRlbGlnaHQlMjBpY2UlMjBjcmVhbXxlbnwwfHwwfHx8MA%3D%3Dg",
+            "ingredients": [
+            { "name": "Fresh Strawberries", "quantity": "1 cup" },
+            { "name": "Sugar", "quantity": "3/4 cup" },
+            { "name": "Heavy Cream", "quantity": "1 1/2 cups" },
+            { "name": "Whole Milk", "quantity": "2 cups" }
+            ]
+        },
+        {
+            "flavor": "Mango Magic",
+            "description": "Tropical mango ice cream with a smooth and fruity finish.",
+            "toppings": ["Mango Cubes", "Coconut Flakes", "Honey Drizzle"],
+            "price": 6.59,
+            "image": "https://plus.unsplash.com/premium_photo-1671559022093-11d633be2f39?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1hbmdvJTIwaWNlJTIwY3JlYW18ZW58MHx8MHx8fDA%3D",
+            "ingredients": [
+            { "name": "Mango Puree", "quantity": "1 cup" },
+            { "name": "Sugar", "quantity": "1/2 cup" },
+            { "name": "Heavy Cream", "quantity": "1 1/2 cups" },
+            { "name": "Whole Milk", "quantity": "2 cups" }
+            ]
+        },
+        {
+            "flavor": "Cookies & Cream",
+            "description": "Classic vanilla ice cream blended with crunchy chocolate cookies.",
+            "toppings": ["Crushed Cookies", "Chocolate Syrup", "Mini Marshmallows"],
+            "price": 7.19,
+            "image": "https://images.unsplash.com/photo-1642646669923-074199898e3c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29va2llcyUyMGFuZCUyMGNyZWFtJTIwaWNlJTIwY3JlYW18ZW58MHx8MHx8fDA%3D",
+            "ingredients": [
+            { "name": "Vanilla Extract", "quantity": "2 tsp" },
+            { "name": "Crushed Cookies", "quantity": "1 cup" },
+            { "name": "Heavy Cream", "quantity": "1 1/2 cups" },
+            { "name": "Whole Milk", "quantity": "2 cups" }
+            ]
+        }
+    ]
+}
