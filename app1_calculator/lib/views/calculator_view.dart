@@ -11,7 +11,7 @@ class CalculatorView extends StatefulWidget {
 class _CalculatorViewState extends State<CalculatorView> {
   int x = 0;
   int y = 0;
-  num z = 0;
+  num? z;
 
   final displayOneController = TextEditingController();
   final displayTwoController = TextEditingController();
@@ -21,8 +21,6 @@ class _CalculatorViewState extends State<CalculatorView> {
   @override
   void initState() {
     super.initState();
-    displayOneController.text = x.toString();
-    displayTwoController.text = y.toString();
     _listener = AppLifecycleListener(
       onShow: _onShow,
       onHide: _onHide,
@@ -83,11 +81,11 @@ class _CalculatorViewState extends State<CalculatorView> {
             controller: displayTwoController,
           ),
 
-          const SizedBox(height: 30,),
+          const SizedBox(height: 30),
 
           Text(
             key: Key("Result"),
-            z.toString(),
+            z?.toString() ?? "",
             style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold),
           ),
           Spacer(),
@@ -97,9 +95,9 @@ class _CalculatorViewState extends State<CalculatorView> {
               FloatingActionButton(
                 onPressed: () {
                   setState(() {
-                    z =
-                        num.tryParse(displayOneController.text)! +
-                        num.tryParse(displayTwoController.text)!;
+                    final num1 = num.tryParse(displayOneController.text) ?? 0;
+                    final num2 = num.tryParse(displayTwoController.text) ?? 0;
+                    z = num1 + num2;
                   });
                 },
                 child: Icon(Icons.add),
@@ -108,9 +106,9 @@ class _CalculatorViewState extends State<CalculatorView> {
               FloatingActionButton(
                 onPressed: () {
                   setState(() {
-                    z =
-                        num.tryParse(displayOneController.text)! -
-                        num.tryParse(displayTwoController.text)!;
+                    final num1 = num.tryParse(displayOneController.text) ?? 0;
+                    final num2 = num.tryParse(displayTwoController.text) ?? 0;
+                    z = num1 - num2;
                   });
                 },
                 child: Icon(CupertinoIcons.minus),
@@ -119,9 +117,9 @@ class _CalculatorViewState extends State<CalculatorView> {
               FloatingActionButton(
                 onPressed: () {
                   setState(() {
-                    z =
-                        num.tryParse(displayOneController.text)! *
-                        num.tryParse(displayTwoController.text)!;
+                    final num1 = num.tryParse(displayOneController.text) ?? 0;
+                    final num2 = num.tryParse(displayTwoController.text) ?? 0;
+                    z = num1 * num2;
                   });
                 },
                 child: Icon(CupertinoIcons.multiply),
@@ -130,9 +128,9 @@ class _CalculatorViewState extends State<CalculatorView> {
               FloatingActionButton(
                 onPressed: () {
                   setState(() {
-                    z =
-                        num.tryParse(displayOneController.text)! /
-                        num.tryParse(displayTwoController.text)!;
+                    final num1 = num.tryParse(displayOneController.text) ?? 0;
+                    final num2 = num.tryParse(displayTwoController.text) ?? 0;
+                    z = num1 / num2;
                   });
                 },
                 child: Icon(CupertinoIcons.divide),
@@ -147,7 +145,7 @@ class _CalculatorViewState extends State<CalculatorView> {
               setState(() {
                 x = 0;
                 y = 0;
-                z = 0;
+                z = null;
                 displayOneController.clear();
                 displayTwoController.clear();
               });
