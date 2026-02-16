@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:store_pro/product_store/data/product_repo.dart';
 import 'package:store_pro/product_store/model/icecream.dart';
-import 'package:store_pro/product_store/model/product.dart';
 
 double _salesTaxRate = 0.18;
 double _shippingCostPerItem = 10;
