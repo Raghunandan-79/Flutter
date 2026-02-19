@@ -16,17 +16,28 @@ class ProductItem extends StatelessWidget {
       leading: CircleAvatar(
         backgroundImage: CachedNetworkImageProvider(icecream.image!),
       ),
-      title: Text(icecream.flavor!, style: Styles.productRowItemName),
+      title: Text(
+        icecream.flavor!,
+        style: Styles.productRowItemName.copyWith(
+          color: Theme.of(context).brightness == Brightness.dark
+              ? Colors.white
+              : Colors.black,
+        ),
+      ),
       subtitle: Text(
         '₹ ${icecream.price}',
-        style: Styles.productRowItemPrice,
+        style: Styles.productRowItemPrice.copyWith(
+          color: Theme.of(context).brightness == Brightness.dark
+              ? Colors.white70
+              : Colors.black54,
+        ),
       ),
       trailing: IconButton(
         onPressed: () {
           Provider.of<AppStateModel>(
-            context, listen: false
-          )
-          .addProductToCart(icecream.id!);
+            context,
+            listen: false,
+          ).addProductToCart(icecream.id!);
         },
         icon: const Icon(Icons.add_shopping_cart),
       ),
