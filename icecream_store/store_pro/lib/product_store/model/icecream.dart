@@ -1,8 +1,6 @@
 import 'package:store_pro/product_store/model/product.dart';
 
 class IceCreamData {
-  List<Icecreams>? icecreams;
-
   IceCreamData({this.icecreams});
 
   IceCreamData.fromJson(Map<String, dynamic> json) {
@@ -13,6 +11,7 @@ class IceCreamData {
       });
     }
   }
+  List<Icecreams>? icecreams;
 
   Map<String, dynamic> toJson() {
     final data = <String, dynamic>{};
@@ -24,16 +23,6 @@ class IceCreamData {
 }
 
 class Icecreams extends Product {
-  int? id;
-  String? category;
-  bool? isFeatured;
-  String? flavor;
-  String? description;
-  List<String>? toppings;
-  double? price;
-  String? image;
-  List<Ingredients>? ingredients;
-
   Icecreams({
     this.id,
     this.category,
@@ -62,6 +51,15 @@ class Icecreams extends Product {
       });
     }
   }
+  int? id;
+  String? category;
+  bool? isFeatured;
+  String? flavor;
+  String? description;
+  List<String>? toppings;
+  double? price;
+  String? image;
+  List<Ingredients>? ingredients;
 
   Map<String, dynamic> toJson() {
     final data = <String, dynamic>{};
@@ -81,20 +79,19 @@ class Icecreams extends Product {
 
   @override
   String toString() {
-    return "Name - $flavor, Price - $price";
+    return 'Name - $flavor, Price - $price';
   }
 }
 
 class Ingredients {
-  String? name;
-  String? quantity;
-
   Ingredients({this.name, this.quantity});
 
   Ingredients.fromJson(Map<String, dynamic> json) {
     name = json['name'] as String?;
     quantity = json['quantity'] as String?;
   }
+  String? name;
+  String? quantity;
 
   Map<String, dynamic> toJson() {
     final data = <String, dynamic>{};
